@@ -26,10 +26,7 @@ const cfg = window.BIG_SCORE_CONFIG;
 async function supabaseGet(path) {
   if (!cfg?.SUPABASE_URL || !cfg?.SUPABASE_PUBLISHABLE_KEY) return null;
   const response = await fetch(`${cfg.SUPABASE_URL}/rest/v1/${path}`, {
-    headers: {
-      apikey: cfg.SUPABASE_PUBLISHABLE_KEY,
-      Authorization: `Bearer ${cfg.SUPABASE_PUBLISHABLE_KEY}`
-    }
+    headers: { apikey: cfg.SUPABASE_PUBLISHABLE_KEY }
   });
   if (!response.ok) throw new Error(`Supabase request failed: ${response.status}`);
   return response.json();

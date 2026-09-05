@@ -4,10 +4,7 @@ let sportsbookEvents = [];
 async function sportsbookGet(path) {
   if (!sportsbookConfig?.SUPABASE_URL || !sportsbookConfig?.SUPABASE_PUBLISHABLE_KEY) return [];
   const response = await fetch(`${sportsbookConfig.SUPABASE_URL}/rest/v1/${path}`, {
-    headers: {
-      apikey: sportsbookConfig.SUPABASE_PUBLISHABLE_KEY,
-      Authorization: `Bearer ${sportsbookConfig.SUPABASE_PUBLISHABLE_KEY}`
-    }
+    headers: { apikey: sportsbookConfig.SUPABASE_PUBLISHABLE_KEY }
   });
   if (!response.ok) throw new Error(`Supabase request failed: ${response.status}`);
   return response.json();

@@ -22,11 +22,11 @@
       </div>
 
       <nav class="nav-list" aria-label="Main navigation">
-        <a class="nav-item active" href="#home"><span>⌂</span>Home</a>
-        <a class="nav-item" href="#sportsbook"><span>◉</span>Sportsbook</a>
-        <a class="nav-item" href="#live"><span>◌</span>Live Betting</a>
-        <a class="nav-item" href="#casino"><span>♛</span>Casino</a>
-        <a class="nav-item" href="#live-casino"><span>◉</span>Live Casino</a>
+        <a class="nav-item active" href="index.html"><span>⌂</span>Home</a>
+        <a class="nav-item" href="sportsbook.html"><span>◉</span>Sportsbook</a>
+        <a class="nav-item" href="sportsbook.html#live"><span>◌</span>Live Betting</a>
+        <a class="nav-item" href="casino.html"><span>♛</span>Casino</a>
+        <a class="nav-item" href="casino.html#live-casino"><span>◉</span>Live Casino</a>
         <a class="nav-item" href="#racebook"><span>♞</span>Racebook</a>
         <a class="nav-item" href="#promotions"><span>◆</span>Promotions</a>
         <a class="nav-item" href="#vip"><span>♛</span>VIP Club</a>
@@ -70,7 +70,7 @@
           <h2>SPORTS & CASINO</h2>
           <p class="hero-kicker">BIGGER GAMES&nbsp;&nbsp; BIGGER WINS</p>
           <p class="hero-sub">ONE ACCOUNT. EVERY BIG MOMENT.</p>
-          <button class="gold-button">DEPOSIT & PLAY</button>
+          <a class="gold-button button-link" href="#casino">EXPLORE & PLAY</a>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="slot-machine">777</div>
@@ -90,18 +90,20 @@
           <div class="sport-pills">
             <span>🏈 NFL</span><span>🏀 NBA</span><span>⚾ MLB</span><span>⚽ SOCCER</span>
           </div>
-          <button class="gold-button sportsbook-cta">OPEN SPORTSBOOK</button>
+          <a class="gold-button sportsbook-cta button-link" href="sportsbook.html">OPEN SPORTSBOOK</a>
         </div>
         <div class="odds-board" aria-label="Featured sportsbook lines">
           <div class="odds-head"><span>FEATURED</span><strong>LIVE LINES</strong></div>
-          <div class="matchup"><div><b>Pro Football</b><small>Tonight · 8:20 PM</small></div><div class="line"><span>+3.5</span><strong>-110</strong></div></div>
-          <div class="matchup"><div><b>Pro Basketball</b><small>Prime Time</small></div><div class="line"><span>O 224.5</span><strong>-105</strong></div></div>
-          <div class="matchup"><div><b>Baseball</b><small>Featured Game</small></div><div class="line"><span>ML</span><strong>+125</strong></div></div>
+          <div data-live-lines>
+            <div class="matchup"><div><b>Pro Football</b><small>Upcoming</small></div><div class="line"><span>GAME</span><strong>VIEW</strong></div></div>
+            <div class="matchup"><div><b>Pro Basketball</b><small>Upcoming</small></div><div class="line"><span>GAME</span><strong>VIEW</strong></div></div>
+            <div class="matchup"><div><b>Baseball</b><small>Upcoming</small></div><div class="line"><span>GAME</span><strong>VIEW</strong></div></div>
+          </div>
         </div>
       </section>
 
       <div class="section-heading" id="casino"><span>CASINO FAVORITES</span><small>PREMIUM GAMES · BIG SCORE STYLE</small></div>
-      <section class="game-grid" aria-label="Featured games">
+      <section class="game-grid" aria-label="Featured games" data-casino-grid>
         <article class="game-card slots">
           <div class="game-art"><div class="reels">777</div><div class="diamond">◆</div></div>
           <div class="game-info"><h3>SLOTS</h3><p>SPIN BIG. WIN BIGGER.</p><button>PLAY SLOTS <span>›</span></button></div>
@@ -121,6 +123,7 @@
       </section>
     </main>
   </div>
+  <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

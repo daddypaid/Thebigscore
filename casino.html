@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#070707" />
+  <title>The Big Score — Casino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="crown">♛</div><div class="brand-copy"><div class="brand-name">THE BIG SCORE</div><div class="brand-sub">SPORTS & CASINO</div></div></div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <a class="nav-item" href="index.html"><span>⌂</span>Home</a>
+        <a class="nav-item" href="sportsbook.html"><span>◉</span>Sportsbook</a>
+        <a class="nav-item" href="sportsbook.html#live"><span>◌</span>Live Betting</a>
+        <a class="nav-item active" href="casino.html"><span>♛</span>Casino</a>
+        <a class="nav-item" href="#live-casino"><span>◉</span>Live Casino</a>
+        <a class="nav-item" href="#racebook"><span>♞</span>Racebook</a>
+        <a class="nav-item" href="#promotions"><span>◆</span>Promotions</a>
+        <a class="nav-item" href="#vip"><span>♛</span>VIP Club</a>
+        <a class="nav-item" href="#tournaments"><span>🏆</span>Tournaments</a>
+        <a class="nav-item" href="#rewards"><span>★</span>Rewards</a>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <nav class="nav-list secondary"><a class="nav-item" href="#account"><span>◯</span>My Account</a><a class="nav-item" href="#deposit"><span>＋</span>Deposit</a><a class="nav-item" href="#withdraw"><span>⇧</span>Withdraw</a><a class="nav-item" href="#settings"><span>⚙</span>Settings</a></nav>
+      <div class="responsible"><div class="mini-crown">♛</div><strong>PLAY RESPONSIBLY</strong><span>21+ · REAL PLAY</span><span>REAL REWARDS</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><button class="menu-button" aria-label="Open menu">☰</button><div class="home-label">CASINO</div><div class="top-actions"><div class="balance">$1,250.00 <button class="add-funds">＋</button></div><button class="icon-btn">♢<span class="dot"></span></button><button class="profile-btn">◯</button></div></header>
+
+      <section class="page-hero">
+        <div><div class="page-badge">THE BIG SCORE CASINO</div><h1>PREMIUM GAMES. BIG SCORE ENERGY.</h1><p>The casino library is connected to Supabase so featured games, categories, artwork and availability can be managed from one backend.</p></div>
+        <div class="page-stat"><strong data-game-count>—</strong><small>AVAILABLE GAMES</small></div>
+      </section>
+
+      <div class="casino-toolbar">
+        <input class="search-box" type="search" placeholder="Search casino games" data-game-search />
+        <div class="filter-row" style="padding:0">
+          <button class="filter-chip active" data-category="all">ALL</button>
+          <button class="filter-chip" data-category="slots">SLOTS</button>
+          <button class="filter-chip" data-category="table">TABLE</button>
+          <button class="filter-chip" data-category="poker">POKER</button>
+        </div>
+      </div>
+
+      <section class="casino-library" data-casino-library>
+        <div class="empty-state">Loading The Big Score casino…</div>
+      </section>
+      <section id="live-casino" class="sportsbook-panel" style="margin-top:16px">
+        <div class="sportsbook-copy"><div class="eyebrow">LIVE CASINO</div><h2>LIVE TABLES ARE NEXT.</h2><p>The page structure is ready, but live-dealer providers are intentionally not wired yet. We’ll connect that only after choosing a provider and completing the required account setup.</p></div>
+        <div class="odds-board"><div class="odds-head"><span>STATUS</span><strong>COMING NEXT</strong></div><div class="matchup"><div><b>Blackjack Tables</b><small>Provider integration pending</small></div><div class="line"><strong>SOON</strong></div></div><div class="matchup"><div><b>Roulette Tables</b><small>Provider integration pending</small></div><div class="line"><strong>SOON</strong></div></div></div>
+      </section>
+    </main>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="casino.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#070707" />
+  <title>The Big Score — Sportsbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="crown">♛</div><div class="brand-copy"><div class="brand-name">THE BIG SCORE</div><div class="brand-sub">SPORTS & CASINO</div></div></div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <a class="nav-item" href="index.html"><span>⌂</span>Home</a>
+        <a class="nav-item active" href="sportsbook.html"><span>◉</span>Sportsbook</a>
+        <a class="nav-item" href="#live"><span>◌</span>Live Betting</a>
+        <a class="nav-item" href="casino.html"><span>♛</span>Casino</a>
+        <a class="nav-item" href="casino.html#live-casino"><span>◉</span>Live Casino</a>
+        <a class="nav-item" href="#racebook"><span>♞</span>Racebook</a>
+        <a class="nav-item" href="#promotions"><span>◆</span>Promotions</a>
+        <a class="nav-item" href="#vip"><span>♛</span>VIP Club</a>
+        <a class="nav-item" href="#tournaments"><span>🏆</span>Tournaments</a>
+        <a class="nav-item" href="#rewards"><span>★</span>Rewards</a>
+      </nav>
+      <div class="sidebar-divider"></div>
+      <nav class="nav-list secondary"><a class="nav-item" href="#account"><span>◯</span>My Account</a><a class="nav-item" href="#deposit"><span>＋</span>Deposit</a><a class="nav-item" href="#withdraw"><span>⇧</span>Withdraw</a><a class="nav-item" href="#settings"><span>⚙</span>Settings</a></nav>
+      <div class="responsible"><div class="mini-crown">♛</div><strong>PLAY RESPONSIBLY</strong><span>21+ · REAL PLAY</span><span>REAL REWARDS</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><button class="menu-button" aria-label="Open menu">☰</button><div class="home-label">SPORTSBOOK</div><div class="top-actions"><div class="balance">$1,250.00 <button class="add-funds">＋</button></div><button class="icon-btn">♢<span class="dot"></span></button><button class="profile-btn">◯</button></div></header>
+
+      <section class="page-hero">
+        <div><div class="page-badge">THE BIG SCORE SPORTSBOOK</div><h1>THE ACTION STARTS HERE.</h1><p>Browse featured matchups across football, basketball, baseball and soccer. The page is now connected to the new Supabase project so the event feed can be managed from the backend.</p></div>
+        <div class="page-stat"><strong data-event-count>—</strong><small>FEATURED EVENTS</small></div>
+      </section>
+
+      <div class="filter-row" role="tablist">
+        <button class="filter-chip active" data-sport="all">ALL SPORTS</button>
+        <button class="filter-chip" data-sport="football">🏈 FOOTBALL</button>
+        <button class="filter-chip" data-sport="basketball">🏀 BASKETBALL</button>
+        <button class="filter-chip" data-sport="baseball">⚾ BASEBALL</button>
+        <button class="filter-chip" data-sport="soccer">⚽ SOCCER</button>
+      </div>
+
+      <section class="event-list" id="live" data-event-list>
+        <div class="empty-state">Loading The Big Score sportsbook…</div>
+      </section>
+      <div class="status-note">Initial lines are development data while the production odds feed is being connected.</div>
+    </main>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <script src="sportsbook.js"></script>
+</body>
+</html>

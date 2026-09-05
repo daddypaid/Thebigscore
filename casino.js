@@ -5,10 +5,7 @@ let activeCategory = 'all';
 async function casinoGet(path) {
   if (!casinoConfig?.SUPABASE_URL || !casinoConfig?.SUPABASE_PUBLISHABLE_KEY) return [];
   const response = await fetch(`${casinoConfig.SUPABASE_URL}/rest/v1/${path}`, {
-    headers: {
-      apikey: casinoConfig.SUPABASE_PUBLISHABLE_KEY,
-      Authorization: `Bearer ${casinoConfig.SUPABASE_PUBLISHABLE_KEY}`
-    }
+    headers: { apikey: casinoConfig.SUPABASE_PUBLISHABLE_KEY }
   });
   if (!response.ok) throw new Error(`Supabase request failed: ${response.status}`);
   return response.json();
